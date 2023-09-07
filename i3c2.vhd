@@ -1,16 +1,3 @@
-----------------------------------------------------------------------------------
--- Engineer: Mike Field <hamster@snap.net.nz>
--- 
--- Create Date:    21:30:20 05/25/2013 
--- Design Name:    i3c2 - Intelligent I2C Controller
--- Module Name:    i3c2 - Behavioral 
--- Description:    The main CPU/logic
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
