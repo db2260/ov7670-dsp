@@ -1,0 +1,50 @@
+NET "*" IOSTANDARD=LVCMOS33;
+CONFIG VCCAUX = "3.3" ;
+
+#50 MHz oscillator
+NET "clk50"       LOC = "p84";
+NET "clk50"       TNM_NET = "osc";
+TIMESPEC "TS_osc" = PERIOD "osc" 20.000ns;
+
+# VGA port
+NET "vga_r[0]"  LOC = "p95";
+NET "vga_r[1]"  LOC = "p94";
+NET "vga_r[2]"  LOC = "p93";
+NET "vga_r[3]"  LOC = "p92";
+NET "vga_g[0]"  LOC = "p100";
+NET "vga_g[1]"  LOC = "p99";
+NET "vga_g[2]"  LOC = "p98";
+NET "vga_g[3]"  LOC = "p97";
+NET "vga_b[0]"  LOC = "p105";
+NET "vga_b[1]"  LOC = "p104";    
+NET "vga_b[2]"  LOC = "p102";
+NET "vga_b[3]"  LOC = "p101";
+NET "vga_hsync" LOC = "p111";
+NET "vga_vsync" LOC = "p112";
+
+#LEDs
+NET "config_finished" LOC = p33;
+
+#Push Buttons
+NET "btnc" LOC = P45;
+NET "btnl" LOC = P44;
+NET "btnr" LOC = P43;
+
+# general-purpose I/O port (J5) / CMOS Camera Interface
+NET "ov7670_data[7]"      LOC = "p75"; 
+NET "ov7670_data[6]"      LOC = "p74"; 
+NET "ov7670_data[5]"      LOC = "p67"; 
+NET "ov7670_data[4]"      LOC = "p66"; 
+NET "ov7670_data[3]"      LOC = "p62"; 
+NET "ov7670_data[2]"      LOC = "p61"; 
+NET "ov7670_data[1]"      LOC = "p59";
+NET "ov7670_data[0]"      LOC = "p58";
+NET "ov7670_pwdn"      LOC = "p57"; 
+NET "ov7670_reset"      LOC = "p56"; 
+NET "ov7670_xclk"     LOC = "p55"; 
+NET "ov7670_href"     LOC = "p51"; 
+NET "ov7670_siod"     LOC = "p50"; 
+NET "ov7670_pclk"     LOC = "p48"; 
+NET "ov7670_vsync"     LOC = "p47";
+NET "ov7670_sioc"     LOC = "p46";
+
